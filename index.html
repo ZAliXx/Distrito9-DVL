@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DISTRITO 9 | Survival Shooter</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVEGACIÓN
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span>D9</span>
+            DISTRITO 9
+        </div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#historia">Historia</a>
+            <a href="#amenazas">Amenazas</a>
+            <a href="#cooperativo">Cooperativo</a>
+            <a href="#reglas">Reglas</a>
+        </nav>
+
+        <button class="nav-button" onclick="scrollToSection('contacto')">
+            JUGAR
+        </button>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section id="inicio" class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <p class="classified">● TRANSMISIÓN DE EMERGENCIA // CLASIFICADO</p>
+
+            <h1>DISTRITO <span>9</span></h1>
+
+            <h2>EL ÚLTIMO DISTRITO</h2>
+
+            <p class="hero-description">
+                El brote comenzó hace horas.
+                Nadie sabe cómo detenerlo.
+                Solo quedan dos soldados entre la humanidad y el colapso.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="primary-button" onclick="scrollToSection('historia')">
+                    INICIAR MISIÓN
+                </button>
+
+                <button class="secondary-button" onclick="openTrailer()">
+                    ▶ VER TRÁILER
+                </button>
+
+            </div>
+
+            <div class="mission-status">
+                <span>●</span> ESTADO DE MISIÓN:
+                <strong>ACTIVO</strong>
+            </div>
+
+        </div>
+
+        <div class="scroll-indicator">
+            ↓ DESPLAZAR PARA CONTINUAR
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         INTRO / DATOS
+    ========================== -->
+
+    <section class="game-info">
+
+        <div class="section-header">
+
+            <span class="section-number">01</span>
+
+            <div>
+                <p class="eyebrow">ARCHIVO DEL JUEGO</p>
+                <h2>BIENVENIDO AL <span>DISTRITO 9</span></h2>
+            </div>
+
+        </div>
+
+        <div class="info-grid">
+
+            <div class="info-card">
+                <span class="icon">☣</span>
+                <h3>GÉNERO</h3>
+                <p>Survival Shooter / Horde Shooter</p>
+            </div>
+
+            <div class="info-card">
+                <span class="icon">👥</span>
+                <h3>JUGADORES</h3>
+                <p>Cooperativo en línea para 2 jugadores</p>
+            </div>
+
+            <div class="info-card">
+                <span class="icon">🎖</span>
+                <h3>ROL</h3>
+                <p>Soldados de operaciones especiales</p>
+            </div>
+
+            <div class="info-card">
+                <span class="icon">⚙</span>
+                <h3>MOTOR</h3>
+                <p>Unreal Engine</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         HISTORIA
+    ========================== -->
+
+    <section id="historia" class="story-section">
+
+        <div class="story-image">
+
+            <div class="image-label">
+                D9 // ZONA DE CUARENTENA
+            </div>
+
+        </div>
+
+        <div class="story-content">
+
+            <p class="eyebrow">ARCHIVO DE INTELIGENCIA // 09-██</p>
+
+            <h2>EL BROTE</h2>
+
+            <p>
+                En un futuro cercano, el Distrito 9 —un sector urbano
+                densamente poblado— es golpeado por un brote viral de
+                origen desconocido que, en cuestión de horas, convierte
+                a gran parte de su población en hordas de no-muertos.
+            </p>
+
+            <p>
+                Las autoridades pierden el control y establecen un
+                perímetro de cuarentena, dejando atrás a sobrevivientes
+                y un misterio sin resolver sobre el origen de la infección.
+            </p>
+
+            <div class="warning-box">
+                ⚠ ADVERTENCIA
+                <br>
+                <span>
+                    No se recomienda ingresar al perímetro.
+                </span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         MISIÓN
+    ========================== -->
+
+    <section class="mission-section">
+
+        <div class="section-header">
+
+            <span class="section-number">02</span>
+
+            <div>
+                <p class="eyebrow">ORDEN DE DESPLIEGUE</p>
+                <h2>OBJETIVOS DE LA <span>MISIÓN</span></h2>
+            </div>
+
+        </div>
+
+
+        <div class="mission-grid">
+
+            <div class="mission-card">
+                <span>01</span>
+                <h3>INGRESAR</h3>
+                <p>
+                    Adentrarse en el Distrito 9 y atravesar
+                    el perímetro de cuarentena.
+                </p>
+            </div>
+
+            <div class="mission-card">
+                <span>02</span>
+                <h3>EVALUAR</h3>
+                <p>
+                    Determinar el nivel de amenaza y
+                    localizar posibles sobrevivientes.
+                </p>
+            </div>
+
+            <div class="mission-card">
+                <span>03</span>
+                <h3>LOCALIZAR</h3>
+                <p>
+                    Llegar al punto donde se perdió el último
+                    contacto con el equipo de investigación.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         DESCUBRIMIENTO
+    ========================== -->
+
+    <section class="discovery-section">
+
+        <div class="discovery-content">
+
+            <p class="eyebrow">REGISTRO RECUPERADO</p>
+
+            <h2>NO FUE UN ACCIDENTE.</h2>
+
+            <p>
+                Conforme avanzan, los soldados descubren rastros de
+                equipo militar y documentos pertenecientes a un
+                laboratorio clandestino.
+            </p>
+
+            <p>
+                La evidencia apunta a una conclusión inquietante:
+                el virus no apareció de manera natural.
+            </p>
+
+            <div class="classified-file">
+
+                <div class="file-header">
+                    <span>ARCHIVO #D9-001</span>
+                    <span>CONFIDENCIAL</span>
+                </div>
+
+                <div class="file-body">
+
+                    <p><strong>ORIGEN:</strong> DESCONOCIDO</p>
+                    <p><strong>PROYECTO:</strong> █████████</p>
+                    <p><strong>ESTADO:</strong> FUERA DE CONTROL</p>
+                    <p><strong>PACIENTE CERO:</strong> LOCALIZADO</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         HORDAS
+    ========================== -->
+
+    <section id="amenazas" class="horde-section">
+
+        <div class="section-header">
+
+            <span class="section-number">03</span>
+
+            <div>
+                <p class="eyebrow">NIVEL DE AMENAZA</p>
+                <h2>TRES HORDA<span>S</span></h2>
+            </div>
+
+        </div>
+
+        <p class="section-intro">
+            Cada horda transforma el escenario y aumenta el nivel
+            de amenaza. No hay vuelta atrás.
+        </p>
+
+
+        <div class="horde-container">
+
+            <article class="horde-card">
+
+                <div class="horde-number">01</div>
+
+                <div class="horde-content">
+
+                    <p class="horde-tag">SECTOR URBANO</p>
+
+                    <h3>LA CAÍDA</h3>
+
+                    <p>
+                        Las calles están infestadas. Edificios abandonados,
+                        vehículos destruidos y sobrevivientes atrapados
+                        convierten la primera zona en un campo de batalla.
+                    </p>
+
+                    <span class="danger-level">
+                        AMENAZA: ███░░
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <article class="horde-card">
+
+                <div class="horde-number">02</div>
+
+                <div class="horde-content">
+
+                    <p class="horde-tag">ZONA INDUSTRIAL</p>
+
+                    <h3>CONTENCIÓN</h3>
+
+                    <p>
+                        El camino conduce a instalaciones industriales
+                        donde las hordas son más agresivas y los rastros
+                        del laboratorio comienzan a aparecer.
+                    </p>
+
+                    <span class="danger-level">
+                        AMENAZA: ████░
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <article class="horde-card">
+
+                <div class="horde-number">03</div>
+
+                <div class="horde-content">
+
+                    <p class="horde-tag">NÚCLEO DEL DISTRITO</p>
+
+                    <h3>EL COLAPSO</h3>
+
+                    <p>
+                        La última horda protege el acceso al núcleo.
+                        Una vez iniciada, no existe posibilidad de retirada.
+                    </p>
+
+                    <span class="danger-level">
+                        AMENAZA: █████
+                    </span>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         BOSS
+    ========================== -->
+
+    <section class="boss-section">
+
+        <div class="boss-content">
+
+            <p class="eyebrow">OBJETIVO FINAL // PRIORIDAD MÁXIMA</p>
+
+            <h2>PACIENTE <span>CERO</span></h2>
+
+            <div class="boss-line"></div>
+
+            <p>
+                Al superar las tres hordas, los soldados alcanzan
+                el núcleo del Distrito 9.
+            </p>
+
+            <p>
+                Allí encuentran al origen de la plaga:
+                una entidad mutada que posee una inteligencia
+                artificial avanzada y que actúa como culminación
+                de la infección.
+            </p>
+
+            <div class="boss-warning">
+                ⚠ EL BOSS NO PUEDE SER EVITADO
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         COOPERATIVO
+    ========================== -->
+
+    <section id="cooperativo" class="coop-section">
+
+        <div class="section-header">
+
+            <span class="section-number">04</span>
+
+            <div>
+                <p class="eyebrow">PROTOCOLO COOPERATIVO</p>
+                <h2>NO SOBREVIVIRÁS <span>SOLO</span></h2>
+            </div>
+
+        </div>
+
+
+        <div class="players">
+
+            <div class="player-card">
+
+                <div class="player-icon">01</div>
+
+                <div>
+                    <p>OPERADOR</p>
+                    <h3>SOLDADO ALPHA</h3>
+
+                    <div class="status">
+                        ● CONECTADO
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="vs">+</div>
+
+
+            <div class="player-card">
+
+                <div class="player-icon">02</div>
+
+                <div>
+                    <p>OPERADOR</p>
+                    <h3>SOLDADO BRAVO</h3>
+
+                    <div class="status">
+                        ● CONECTADO
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <p class="coop-text">
+            La supervivencia depende de ambos jugadores.
+            Coordina tus movimientos, administra tus recursos
+            y mantén con vida a tu compañero.
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         REGLAS
+    ========================== -->
+
+    <section id="reglas" class="rules-section">
+
+        <div class="section-header">
+
+            <span class="section-number">05</span>
+
+            <div>
+                <p class="eyebrow">PROTOCOLO D9</p>
+                <h2>REGLAS DE <span>SUPERVIVENCIA</span></h2>
+            </div>
+
+        </div>
+
+
+        <div class="rules-grid">
+
+            <div class="rule">
+                <span>01</span>
+                <p>Solo <strong>2 jugadores simultáneos</strong> en modo cooperativo.</p>
+            </div>
+
+            <div class="rule">
+                <span>02</span>
+                <p>Es obligatorio superar las <strong>3 hordas</strong> para acceder al boss.</p>
+            </div>
+
+            <div class="rule">
+                <span>03</span>
+                <p>El escenario cambia después de cada horda.</p>
+            </div>
+
+            <div class="rule">
+                <span>04</span>
+                <p><strong>No se puede volver atrás.</strong></p>
+            </div>
+
+            <div class="rule">
+                <span>05</span>
+                <p>El boss debe ser derrotado obligatoriamente.</p>
+            </div>
+
+            <div class="rule">
+                <span>06</span>
+                <p>La extracción solo se habilita después de derrotar al boss.</p>
+            </div>
+
+            <div class="rule">
+                <span>07</span>
+                <p>Si un jugador muere, se aplican las reglas de revive o derrota cooperativa.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         EXTRACCIÓN
+    ========================== -->
+
+    <section class="extraction-section">
+
+        <div class="extraction-content">
+
+            <p class="eyebrow">FASE FINAL</p>
+
+            <h2>EXTRACCIÓN</h2>
+
+            <p>
+                Tras derrotar al paciente cero, la zona se estabiliza
+                temporalmente.
+            </p>
+
+            <p>
+                Un helicóptero recibe la señal y se dirige al punto
+                de extracción.
+            </p>
+
+            <div class="extraction-status">
+
+                <span class="pulse"></span>
+
+                EXTRACCIÓN DISPONIBLE
+
+            </div>
+
+            <button class="primary-button" onclick="showEnding()">
+                SOLICITAR EXTRACCIÓN
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FINAL
+    ========================== -->
+
+    <section id="contacto" class="final-section">
+
+        <div>
+
+            <p class="classified">TRANSMISIÓN FINAL // D9</p>
+
+            <h2>¿ESTÁS LISTO PARA<br><span>ENTRAR?</span></h2>
+
+            <p>
+                El Distrito 9 no espera a nadie.
+            </p>
+
+            <button class="primary-button" onclick="startMission()">
+                INICIAR MISIÓN
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="logo">
+            D9 // DISTRITO 9
+        </div>
+
+        <p>
+            Survival Shooter Cooperativo
+        </p>
+
+        <p class="copyright">
+            © 2026 DISTRITO 9 — Proyecto académico
+        </p>
+
+    </footer>
+
+
+    <!-- =========================
+         MODAL TRÁILER
+    ========================== -->
+
+    <div id="trailerModal" class="modal">
+
+        <div class="modal-content">
+
+            <button class="close-modal" onclick="closeTrailer()">×</button>
+
+            <p class="eyebrow">TRANSMISIÓN RECUPERADA</p>
+
+            <h2>DISTRITO <span>9</span></h2>
+
+            <div class="fake-video">
+
+                <div class="video-glitch">
+                    SIGNAL LOST
+                </div>
+
+                <div class="play-circle">
+                    ▶
+                </div>
+
+                <p>
+                    TRÁILER NO DISPONIBLE
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         NOTIFICACIÓN
+    ========================== -->
+
+    <div id="notification" class="notification">
+        <span>⚠</span>
+        <p id="notificationText">Mensaje</p>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
