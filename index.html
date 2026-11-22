@@ -1,8 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Distrito 9: videojuego cooperativo Survival Shooter para dos jugadores. Sobrevive a tres hordas, derrota a Paciente Cero y escapa. ">
+    <meta name="theme-color" content="#111111">
 
     <title>DISTRITO 9 | Survival Shooter</title>
 
@@ -30,9 +34,12 @@
         <nav>
             <a href="#inicio">Inicio</a>
             <a href="#historia">Historia</a>
-            <a href="#amenazas">Amenazas</a>
+            <a href="#escenario">Escenario</a>
+            <a href="#amenazas">Enemigos</a>
             <a href="#cooperativo">Cooperativo</a>
             <a href="#reglas">Reglas</a>
+            <a href="#contenido">Contenido</a>
+            <a href="#redes">Redes</a>
         </nav>
 
         <button class="nav-button" onclick="scrollToSection('contacto')">
@@ -52,25 +59,29 @@
 
         <div class="hero-content">
 
-            <p class="classified">● TRANSMISIÓN DE EMERGENCIA // CLASIFICADO</p>
+            <p class="classified">
+                ● TRANSMISIÓN DE EMERGENCIA // CLASIFICADO
+            </p>
 
             <h1>DISTRITO <span>9</span></h1>
 
             <h2>EL ÚLTIMO DISTRITO</h2>
 
             <p class="hero-description">
-                El brote comenzó hace horas.
-                Nadie sabe cómo detenerlo.
-                Solo quedan dos soldados entre la humanidad y el colapso.
+                Tres hordas. Dos soldados. Una última oportunidad.
+                Sobrevive a la infección, encuentra al paciente cero
+                y consigue escapar antes de que sea demasiado tarde.
             </p>
 
             <div class="hero-buttons">
 
-                <button class="primary-button" onclick="scrollToSection('historia')">
+                <button class="primary-button"
+                    onclick="scrollToSection('historia')">
                     INICIAR MISIÓN
                 </button>
 
-                <button class="secondary-button" onclick="openTrailer()">
+                <button class="secondary-button"
+                    onclick="scrollToSection('trailer')">
                     ▶ VER TRÁILER
                 </button>
 
@@ -91,7 +102,7 @@
 
 
     <!-- =========================
-         INTRO / DATOS
+         INFORMACIÓN DEL JUEGO
     ========================== -->
 
     <section class="game-info">
@@ -102,10 +113,17 @@
 
             <div>
                 <p class="eyebrow">ARCHIVO DEL JUEGO</p>
-                <h2>BIENVENIDO AL <span>DISTRITO 9</span></h2>
+                <h2>CONOCE EL <span>DISTRITO 9</span></h2>
             </div>
 
         </div>
+
+        <p class="section-intro">
+            Distrito 9 es un videojuego multijugador cooperativo
+            en línea en el que dos soldados de élite deben sobrevivir
+            a tres hordas de zombis, derrotar al paciente cero
+            y escapar en un helicóptero de extracción.
+        </p>
 
         <div class="info-grid">
 
@@ -116,21 +134,33 @@
             </div>
 
             <div class="info-card">
-                <span class="icon"></span>
+                <span class="icon">👥</span>
                 <h3>JUGADORES</h3>
-                <p>Cooperativo en línea para 2 jugadores</p>
+                <p>Multijugador cooperativo en línea para 2 jugadores</p>
             </div>
 
             <div class="info-card">
                 <span class="icon">🎖</span>
                 <h3>ROL</h3>
-                <p>Soldados de operaciones especiales</p>
+                <p>Soldados de élite en un distrito invadido por zombis</p>
             </div>
 
             <div class="info-card">
                 <span class="icon">⚙</span>
                 <h3>MOTOR</h3>
                 <p>Unreal Engine</p>
+            </div>
+
+            <div class="info-card">
+                <span class="icon">🎯</span>
+                <h3>OBJETIVO</h3>
+                <p>Sobrevivir tres hordas y derrotar al boss final</p>
+            </div>
+
+            <div class="info-card">
+                <span class="icon">🚁</span>
+                <h3>FINAL</h3>
+                <p>Escapar mediante extracción en helicóptero</p>
             </div>
 
         </div>
@@ -154,21 +184,30 @@
 
         <div class="story-content">
 
-            <p class="eyebrow">ARCHIVO DE INTELIGENCIA // 09-██</p>
+            <p class="eyebrow">
+                ARCHIVO DE INTELIGENCIA // 09-██
+            </p>
 
             <h2>EL BROTE</h2>
 
             <p>
                 En un futuro cercano, el Distrito 9 —un sector urbano
-                densamente poblado— es golpeado por un brote viral de
-                origen desconocido que, en cuestión de horas, convierte
-                a gran parte de su población en hordas de no-muertos.
+                densamente poblado— es golpeado por un brote viral
+                de origen desconocido.
             </p>
 
             <p>
-                Las autoridades pierden el control y establecen un
-                perímetro de cuarentena, dejando atrás a sobrevivientes
-                y un misterio sin resolver sobre el origen de la infección.
+                En cuestión de horas, gran parte de su población
+                se convierte en hordas de no-muertos. Las autoridades
+                pierden el control y establecen un perímetro de
+                cuarentena, dejando atrás a sobrevivientes y un
+                misterio sin resolver sobre el origen de la infección.
+            </p>
+
+            <p>
+                Ante la situación, el mando militar despliega a
+                dos soldados de operaciones especiales para
+                investigar el incidente.
             </p>
 
             <div class="warning-box">
@@ -185,7 +224,7 @@
 
 
     <!-- =========================
-         MISIÓN
+         OBJETIVOS DE MISIÓN
     ========================== -->
 
     <section class="mission-section">
@@ -201,6 +240,11 @@
 
         </div>
 
+        <p class="section-intro">
+            Dos operadores han sido asignados para ingresar
+            al sector y descubrir qué ocurrió con el equipo
+            de investigación.
+        </p>
 
         <div class="mission-grid">
 
@@ -217,8 +261,8 @@
                 <span>02</span>
                 <h3>EVALUAR</h3>
                 <p>
-                    Determinar el nivel de amenaza y
-                    localizar posibles sobrevivientes.
+                    Evaluar el nivel de amenaza y determinar
+                    las condiciones actuales del sector.
                 </p>
             </div>
 
@@ -244,19 +288,25 @@
 
         <div class="discovery-content">
 
-            <p class="eyebrow">REGISTRO RECUPERADO</p>
+            <p class="eyebrow">REGISTRO DE INVESTIGACIÓN RECUPERADO</p>
 
             <h2>NO FUE UN ACCIDENTE.</h2>
 
             <p>
-                Conforme avanzan, los soldados descubren rastros de
-                equipo militar y documentos pertenecientes a un
-                laboratorio clandestino.
+                Conforme avanzan por el distrito, los soldados
+                descubren rastros de equipo militar y documentos
+                pertenecientes a un laboratorio clandestino.
             </p>
 
             <p>
-                La evidencia apunta a una conclusión inquietante:
-                el virus no apareció de manera natural.
+                La evidencia sugiere que la infección fue producto
+                de una investigación encubierta que salió de control.
+            </p>
+
+            <p>
+                Ahora, su misión ya no consiste únicamente en
+                sobrevivir: deben descubrir qué fue lo que realmente
+                se liberó en el Distrito 9.
             </p>
 
             <div class="classified-file">
@@ -283,6 +333,81 @@
 
 
     <!-- =========================
+         ESCENARIO
+    ========================== -->
+
+    <section id="escenario" class="environment-section">
+
+        <div class="section-header">
+
+            <span class="section-number">03</span>
+
+            <div>
+                <p class="eyebrow">ZONA DE OPERACIONES</p>
+                <h2>EL ESCENARIO: <span>DISTRITO 9</span></h2>
+            </div>
+
+        </div>
+
+        <p class="section-intro">
+            Toda la experiencia se desarrolla dentro de un entorno
+            urbano denso, construido en Unreal Engine.
+            Cada rincón representa un nuevo peligro.
+        </p>
+
+        <div class="environment-grid">
+
+            <div class="environment-card street">
+                <div class="environment-overlay">
+                    <span>SECTOR 01</span>
+                    <h3>CALLES</h3>
+                    <p>Vías urbanas infestadas de zombis y vehículos abandonados.</p>
+                </div>
+            </div>
+
+            <div class="environment-card buildings">
+                <div class="environment-overlay">
+                    <span>SECTOR 02</span>
+                    <h3>ZONA DEL METRO</h3>
+                    <p>Área de transporte integrada al recorrido por el distrito.</p>
+                </div>
+            </div>
+
+            <div class="environment-card alleys">
+                <div class="environment-overlay">
+                    <span>SECTOR 03</span>
+                    <h3>PARQUE</h3>
+                    <p>Zona abierta del mapa que forma parte de la ruta de supervivencia.</p>
+                </div>
+            </div>
+
+            <div class="environment-card boss-area">
+                <div class="environment-overlay">
+                    <span>SECTOR 04</span>
+                    <h3>PLAZA DEL JEFE</h3>
+                    <p>Ubicación del enfrentamiento contra Paciente Cero.</p>
+                </div>
+            </div>
+
+            <div class="environment-card helipad-area">
+                <div class="environment-overlay">
+                    <span>SECTOR 05</span>
+                    <h3>HELIPUERTO</h3>
+                    <p>Punto final para solicitar y completar la extracción.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="engine-label">
+            <span>⚙</span>
+            ENTORNO DESARROLLADO EN UNREAL ENGINE
+        </div>
+
+    </section>
+
+
+    <!-- =========================
          HORDAS
     ========================== -->
 
@@ -290,20 +415,20 @@
 
         <div class="section-header">
 
-            <span class="section-number">03</span>
+            <span class="section-number">04</span>
 
             <div>
                 <p class="eyebrow">NIVEL DE AMENAZA</p>
-                <h2>TRES HORDA<span>S</span></h2>
+                <h2>LAS TRES <span>HORDAS</span></h2>
             </div>
 
         </div>
 
         <p class="section-intro">
-            Cada horda transforma el escenario y aumenta el nivel
-            de amenaza. No hay vuelta atrás.
+            La supervivencia depende de la coordinación
+            entre ambos soldados. Cada horda debe ser superada
+            antes de avanzar al siguiente sector.
         </p>
-
 
         <div class="horde-container">
 
@@ -313,14 +438,14 @@
 
                 <div class="horde-content">
 
-                    <p class="horde-tag">SECTOR URBANO</p>
+                    <p class="horde-tag">PRIMERA HORDA</p>
 
                     <h3>LA CAÍDA</h3>
 
                     <p>
-                        Las calles están infestadas. Edificios abandonados,
-                        vehículos destruidos y sobrevivientes atrapados
-                        convierten la primera zona en un campo de batalla.
+                        El brote ha tomado las calles del distrito.
+                        Los soldados deben abrirse paso entre
+                        los primeros grupos de zombis.
                     </p>
 
                     <span class="danger-level">
@@ -331,21 +456,20 @@
 
             </article>
 
-
             <article class="horde-card">
 
                 <div class="horde-number">02</div>
 
                 <div class="horde-content">
 
-                    <p class="horde-tag">ZONA INDUSTRIAL</p>
+                    <p class="horde-tag">SEGUNDA HORDA</p>
 
                     <h3>CONTENCIÓN</h3>
 
                     <p>
-                        El camino conduce a instalaciones industriales
-                        donde las hordas son más agresivas y los rastros
-                        del laboratorio comienzan a aparecer.
+                        La infección continúa expandiéndose.
+                        La amenaza aumenta mientras los operadores
+                        avanzan por el distrito.
                     </p>
 
                     <span class="danger-level">
@@ -356,20 +480,20 @@
 
             </article>
 
-
             <article class="horde-card">
 
                 <div class="horde-number">03</div>
 
                 <div class="horde-content">
 
-                    <p class="horde-tag">NÚCLEO DEL DISTRITO</p>
+                    <p class="horde-tag">TERCERA HORDA</p>
 
                     <h3>EL COLAPSO</h3>
 
                     <p>
-                        La última horda protege el acceso al núcleo.
-                        Una vez iniciada, no existe posibilidad de retirada.
+                        Los soldados llegan al núcleo del distrito.
+                        Deben superar la última horda para
+                        desbloquear el enfrentamiento final.
                     </p>
 
                     <span class="danger-level">
@@ -386,33 +510,742 @@
 
 
     <!-- =========================
-         BOSS
+         ENEMIGOS Y ACTORES
+    ========================== -->
+
+<!-- =========================
+     ACTORES DEL JUEGO
+========================== -->
+
+<section class="enemies-section">
+
+    <div class="section-header">
+
+        <span class="section-number">05</span>
+
+        <div>
+            <p class="eyebrow">INTELIGENCIA DE COMBATE</p>
+            <h2>ACTORES DEL <span>DISTRITO 9</span></h2>
+        </div>
+
+    </div>
+
+    <div class="enemies-grid">
+
+        <div class="enemy-card">
+
+            <div class="enemy-symbol">01</div>
+
+            <p class="eyebrow">JUGADORES PRINCIPALES</p>
+
+            <h3>SOLDADOS DE ÉLITE</h3>
+
+            <p>
+                Jugador 1 y Jugador 2. Operadores militares
+                encargados de sobrevivir, cooperar y completar
+                la misión.
+            </p>
+
+            <span class="enemy-status friendly">
+                ALIADOS
+            </span>
+
+        </div>
+
+
+        <div class="enemy-card">
+
+            <div class="enemy-symbol">02</div>
+
+            <p class="eyebrow">ENEMIGOS COMUNES</p>
+
+            <h3>ZOMBIS</h3>
+
+            <p>
+                Hordas de no-muertos controladas por una IA
+                de persecución. Representan la principal
+                amenaza durante el recorrido.
+            </p>
+
+            <span class="enemy-status">
+                HOSTILES
+            </span>
+
+        </div>
+
+
+        <div class="enemy-card boss-card">
+
+            <div class="enemy-symbol">03</div>
+
+            <p class="eyebrow">JEFE FINAL</p>
+
+            <h3>PACIENTE CERO</h3>
+
+            <p>
+                Entidad mutada con inteligencia artificial
+                avanzada que representa la culminación
+                de la infección.
+            </p>
+
+            <span class="enemy-status">
+                AMENAZA CRÍTICA
+            </span>
+
+        </div>
+
+
+        <div class="enemy-card helicopter-card">
+
+            <div class="enemy-symbol">04</div>
+
+            <p class="eyebrow">EXTRACCIÓN FINAL</p>
+
+            <h3>HELICÓPTERO</h3>
+
+            <p>
+                Medio de extracción que permite a los dos
+                soldados escapar del Distrito 9 después
+                de derrotar al paciente cero.
+            </p>
+
+            <span class="enemy-status friendly">
+                EXTRACCIÓN
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ANIMACIONES
+========================== -->
+
+<section class="animations-section">
+
+    <div class="section-header">
+
+        <span class="section-number">06</span>
+
+        <div>
+            <p class="eyebrow">SISTEMA DE PERSONAJES</p>
+            <h2>ANIMACIONES DE <span>COMBATE</span></h2>
+        </div>
+
+    </div>
+
+    <p class="section-intro">
+        Los soldados cuentan con un conjunto de animaciones
+        que permiten representar sus movimientos y acciones
+        durante la partida. El sistema es controlado mediante
+        un Animation Blueprint.
+    </p>
+
+    <div class="animation-info">
+
+        <div class="animation-folder">
+            <span>📁</span>
+            <div>
+                <p>CARPETA DE ANIMACIONES</p>
+                <strong>Characters/MainGuy/animation</strong>
+            </div>
+        </div>
+
+        <div class="animation-folder">
+            <span>⚙</span>
+            <div>
+                <p>ANIMATION BLUEPRINT</p>
+                <strong>MainAnimationBP</strong>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="animations-grid">
+
+        <div class="animation-card">
+            <span>01</span>
+            <h3>QUIETO CON PISTOLA</h3>
+            <p>Posición de reposo mientras sostiene el arma.</p>
+        </div>
+
+        <div class="animation-card">
+            <span>02</span>
+            <h3>CAMINAR</h3>
+            <p>Movimiento normal del personaje por el escenario.</p>
+        </div>
+
+        <div class="animation-card">
+            <span>03</span>
+            <h3>CORRER</h3>
+            <p>Desplazamiento rápido para escapar o combatir.</p>
+        </div>
+
+        <div class="animation-card">
+            <span>04</span>
+            <h3>INICIO DEL SALTO</h3>
+            <p>Animación inicial al abandonar el suelo.</p>
+        </div>
+
+        <div class="animation-card">
+            <span>05</span>
+            <h3>EN EL AIRE</h3>
+            <p>Movimiento del personaje durante el salto.</p>
+        </div>
+
+        <div class="animation-card">
+            <span>06</span>
+            <h3>ATERRIZAJE</h3>
+            <p>Animación al regresar al suelo.</p>
+        </div>
+
+        <div class="animation-card">
+            <span>07</span>
+            <h3>MORIR</h3>
+            <p>Representación de la muerte del personaje.</p>
+        </div>
+
+        <div class="animation-card">
+            <span>08</span>
+            <h3>APUNTAR</h3>
+            <p>
+                Orientación del arma hacia arriba,
+                al frente y hacia abajo.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTROLES
+========================== -->
+
+<section class="controls-section">
+
+    <div class="section-header">
+
+        <span class="section-number">07</span>
+
+        <div>
+            <p class="eyebrow">MANUAL DEL OPERADOR</p>
+            <h2>CONTROLES Y <span>MECÁNICAS</span></h2>
+        </div>
+
+    </div>
+
+    <p class="section-intro">
+        Domina los controles, administra tu armamento
+        y mantente preparado para cualquier amenaza.
+    </p>
+
+    <div class="controls-container">
+
+        <div class="control-panel">
+
+            <h3>DESPLAZAMIENTO</h3>
+
+            <div class="keyboard">
+
+                <div class="key-row">
+                    <span class="key">W</span>
+                </div>
+
+                <div class="key-row">
+                    <span class="key">A</span>
+                    <span class="key">S</span>
+                    <span class="key">D</span>
+                </div>
+
+            </div>
+
+            <p>
+                Movimiento hacia adelante, izquierda,
+                atrás y derecha.
+            </p>
+
+        </div>
+
+
+        <div class="control-panel">
+
+            <h3>ACCIONES</h3>
+
+            <div class="action-list">
+
+                <div class="action-item">
+                    <span class="key space-key">SPACE</span>
+                    <p>Saltar</p>
+                </div>
+
+                <div class="action-item">
+                    <span class="key mouse-key">LMB</span>
+                    <p>Apuntar en primera persona (ADS)</p>
+                </div>
+
+                <div class="action-item">
+                    <span class="key">2</span>
+                    <p>Cambiar de arma</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="camera-mode">
+
+        <div>
+            <p class="eyebrow">VISTA PREDETERMINADA</p>
+            <h3>TERCERA PERSONA</h3>
+            <p>
+                Permite al jugador desplazarse y observar
+                mejor el entorno durante la exploración.
+            </p>
+        </div>
+
+        <div class="camera-label">
+            <span>3RD</span>
+            PERSON VIEW
+        </div>
+
+    </div>
+
+    <div class="weapon-info">
+
+        <div class="weapon-card">
+            <span>01 // ARMA INICIAL</span>
+            <h3>PISTOLA</h3>
+            <p>Armamento disponible al iniciar la partida.</p>
+        </div>
+
+        <div class="weapon-card">
+            <span>02 // ARMA SECUNDARIA</span>
+            <h3>ESCOPETA</h3>
+            <p>Segunda arma disponible mediante el cambio de armamento.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     DESARROLLO
+========================== -->
+
+<section class="development-section">
+
+    <div class="section-header">
+
+        <span class="section-number">08</span>
+
+        <div>
+            <p class="eyebrow">DOCUMENTACIÓN TÉCNICA</p>
+            <h2>DESARROLLO DEL <span>PROYECTO</span></h2>
+        </div>
+
+    </div>
+
+    <p class="section-intro">
+        Distrito 9 fue desarrollado en Unreal Engine,
+        integrando escenarios, personajes, animaciones,
+        sistemas de combate, efectos visuales y
+        funcionalidades multijugador.
+    </p>
+
+
+    <!-- PRIMERA ENTREGA -->
+
+    <div class="development-block">
+
+        <div class="development-heading">
+            <span>FASE 01</span>
+            <h3>ESCENARIO, PERSONAJE Y PARTÍCULAS</h3>
+        </div>
+
+        <div class="development-content">
+
+            <div class="development-item">
+                <h4>ESCENARIO</h4>
+                <p>
+                    Se construyó el nivel principal
+                    <strong>District79Metro_Park_Lvl</strong>,
+                    compuesto por calles, zona de metro,
+                    parque, plaza del jefe y helipuerto.
+                </p>
+                <p>
+                    También se creó el nivel independiente
+                    <strong>LVL_MainMenu</strong>, utilizando
+                    <strong>BP_MainMenu</strong> como GameMode.
+                </p>
+                <p>
+                    Se incorporó un NavMesh dinámico para
+                    permitir que los enemigos naveguen
+                    por el escenario.
+                </p>
+            </div>
+
+            <div class="development-item">
+                <h4>PERSONAJE IMPORTADO</h4>
+                <p>
+                    El soldado fue importado en
+                    <strong>Content/Characters/MainGuy</strong>,
+                    incluyendo su esqueleto y animaciones.
+                </p>
+                <p>
+                    El Blueprint base utilizado es
+                    <strong>BP_SoldierBase</strong>.
+                </p>
+            </div>
+
+            <div class="development-item">
+                <h4>PARTÍCULAS</h4>
+                <p>
+                    Se implementaron sistemas de partículas
+                    mediante Niagara, distribuidos en el mapa
+                    y asociados a los efectos de combate.
+                </p>
+                <p>
+                    La sangre aparece al impactar a los zombis
+                    y el fogonazo del disparo se replica
+                    mediante Multicast.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- SEGUNDA ENTREGA -->
+
+    <div class="development-block">
+
+        <div class="development-heading">
+            <span>FASE 02</span>
+            <h3>REPLICACIÓN Y SISTEMA MULTIJUGADOR</h3>
+        </div>
+
+        <div class="development-content">
+
+            <div class="development-item">
+                <h4>REPLICACIÓN DEL DAÑO</h4>
+                <p>
+                    El cálculo del daño se realiza en el servidor
+                    para mantener sincronizado el combate
+                    entre los jugadores.
+                </p>
+                <p>
+                    Se utiliza Switch Has Authority para determinar
+                    si el jugador es servidor o cliente.
+                    Los clientes solicitan el cálculo mediante
+                    SRV_ApplyGunDamage.
+                </p>
+            </div>
+
+            <div class="development-item">
+                <h4>DETECCIÓN DE IMPACTOS</h4>
+                <p>
+                    Se utiliza Line Trace For Objects desde
+                    la cámara del jugador para detectar
+                    los objetos impactados.
+                </p>
+                <p>
+                    Actor Has Tag valida que el objetivo
+                    sea un enemigo y Apply Damage aplica
+                    el daño correspondiente.
+                </p>
+            </div>
+
+            <div class="development-item">
+                <h4>HUD DE VIDA</h4>
+                <p>
+                    Cada jugador dispone de su propio widget.
+                    El evento CL_UpdateHealth_WG actualiza
+                    la barra de vida únicamente en la pantalla
+                    del jugador correspondiente.
+                </p>
+            </div>
+
+            <div class="development-item">
+                <h4>REPLICACIÓN DE EFECTOS</h4>
+                <p>
+                    Los efectos visuales del disparo se
+                    distribuyen mediante SRV_SpawnShotEmitter
+                    y MC_SpawnShotEmitter, permitiendo que
+                    ambos jugadores puedan observarlos.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ENTREGA FINAL -->
+
+    <div class="development-block">
+
+        <div class="development-heading">
+            <span>FASE 03</span>
+            <h3>JUEGO TERMINADO</h3>
+        </div>
+
+        <div class="development-content">
+
+            <div class="development-item">
+                <h4>PERSONAJES</h4>
+                <p>
+                    Se implementaron dos soldados que comparten
+                    la lógica de BP_SoldierBase y se diferencian
+                    mediante el color de sus uniformes.
+                </p>
+                <p>
+                    Verde para el servidor y rojo para el cliente.
+                    La asignación se realiza automáticamente
+                    según el orden de entrada.
+                </p>
+            </div>
+
+            <div class="development-item">
+                <h4>ARMAS Y POWER-UPS</h4>
+                <p>
+                    El jugador inicia con una pistola y puede
+                    cambiar a la escopeta mediante la tecla 2.
+                </p>
+                <p>
+                    Los power-ups muestran temporalmente
+                    sus respectivos iconos en el HUD.
+                </p>
+            </div>
+
+            <div class="development-item">
+                <h4>SISTEMA DE PUNTUACIÓN</h4>
+                <p>
+                    Los puntos se almacenan en PlayerScore,
+                    una variable RepNotify de PlayerState_Propio,
+                    permitiendo que ambos jugadores visualicen
+                    las puntuaciones actualizadas.
+                </p>
+            </div>
+
+            <div class="development-item">
+                <h4>FINALIZACIÓN DE PARTIDA</h4>
+                <p>
+                    Se implementaron las tres oleadas de zombis,
+                    el jefe Mutante (paciente cero), la extracción
+                    en helicóptero y la pantalla de resultados
+                    con ranking.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- =========================
+         BOSS FINAL
     ========================== -->
 
     <section class="boss-section">
 
         <div class="boss-content">
 
-            <p class="eyebrow">OBJETIVO FINAL // PRIORIDAD MÁXIMA</p>
+            <p class="eyebrow">
+                OBJETIVO FINAL // PRIORIDAD MÁXIMA
+            </p>
 
             <h2>PACIENTE <span>CERO</span></h2>
 
             <div class="boss-line"></div>
 
             <p>
-                Al superar las tres hordas, los soldados alcanzan
-                el núcleo del Distrito 9.
+                Tras sobrevivir a las tres hordas, los soldados
+                alcanzan el núcleo del Distrito 9.
             </p>
 
             <p>
-                Allí encuentran al origen de la plaga:
-                una entidad mutada que posee una inteligencia
-                artificial avanzada y que actúa como culminación
-                de la infección.
+                Allí enfrentan al paciente cero: una entidad
+                mutada con IA avanzada que actúa como culminación
+                de la plaga.
+            </p>
+
+            <p>
+                Derrotarlo es la única manera de estabilizar
+                temporalmente la zona y habilitar la extracción.
             </p>
 
             <div class="boss-warning">
-                ⚠ EL BOSS NO PUEDE SER EVITADO
+                ⚠ EL ENFRENTAMIENTO FINAL ES OBLIGATORIO
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+     SISTEMA DE RESULTADOS
+========================== -->
+
+<section class="results-section">
+
+    <div class="section-header">
+
+        <span class="section-number">09</span>
+
+        <div>
+            <p class="eyebrow">RESULTADOS DE OPERACIÓN</p>
+            <h2>VICTORIA O <span>DERROTA</span></h2>
+        </div>
+
+    </div>
+
+    <div class="results-grid">
+
+        <div class="result-card victory">
+
+            <span class="result-icon">✓</span>
+
+            <p class="eyebrow">CONDICIÓN DE VICTORIA</p>
+
+            <h3>MISIÓN COMPLETADA</h3>
+
+            <p>
+                El equipo gana al derrotar al paciente cero
+                y llegar al helicóptero de extracción.
+            </p>
+
+            <ul>
+                <li>Superar las tres hordas.</li>
+                <li>Derrotar al jefe final.</li>
+                <li>Alcanzar el helicóptero.</li>
+            </ul>
+
+        </div>
+
+
+        <div class="result-card defeat">
+
+            <span class="result-icon">✕</span>
+
+            <p class="eyebrow">CONDICIÓN DE DERROTA</p>
+
+            <h3>OPERADOR ELIMINADO</h3>
+
+            <p>
+                Si un jugador muere, pierde la partida
+                y recibe una pantalla individual de derrota.
+            </p>
+
+            <ul>
+                <li>Se muestra la pantalla WB_Muerte.</li>
+                <li>Se habilita el cursor.</li>
+                <li>No se muestran puntuaciones en esta pantalla.</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <div class="ranking-panel">
+
+        <p class="eyebrow">CLASIFICACIÓN FINAL</p>
+
+        <h3>EL MEJOR OPERADOR</h3>
+
+        <p>
+            Durante una victoria, el sistema compara
+            los puntos obtenidos por ambos jugadores.
+            Quien consigue la puntuación más alta
+            ocupa el primer lugar.
+        </p>
+
+        <div class="ranking-positions">
+
+            <div class="ranking-position first">
+                <span>01</span>
+                <div>
+                    <strong>PRIMER LUGAR</strong>
+                    <p>Mayor puntuación</p>
+                </div>
+            </div>
+
+            <div class="ranking-position second">
+                <span>02</span>
+                <div>
+                    <strong>SEGUNDO LUGAR</strong>
+                    <p>Menor puntuación</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="score-variable">
+            VARIABLE DE PUNTUACIÓN:
+            <strong>PlayerScore</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- =========================
+         MOTIVACIONES
+    ========================== -->
+
+    <section class="motivation-section">
+
+        <div class="section-header">
+
+            <span class="section-number">10</span>
+
+            <div>
+                <p class="eyebrow">OBJETIVOS DEL OPERADOR</p>
+                <h2>¿QUÉ TE IMPULSA A <span>SOBREVIVIR?</span></h2>
+            </div>
+
+        </div>
+
+        <div class="motivation-grid">
+
+            <div class="motivation-card">
+                <span>01</span>
+                <h3>COOPERACIÓN</h3>
+                <p>
+                    Trabajar en equipo con el otro jugador
+                    para resistir las hordas y completar la misión.
+                </p>
+            </div>
+
+            <div class="motivation-card">
+                <span>02</span>
+                <h3>DESCUBRIMIENTO</h3>
+                <p>
+                    Investigar el origen del brote y descubrir
+                    qué ocurrió realmente en el Distrito 9.
+                </p>
+            </div>
+
+            <div class="motivation-card">
+                <span>03</span>
+                <h3>COMPETENCIA</h3>
+                <p>
+                    Conseguir el mayor puntaje posible
+                    durante la partida.
+                </p>
             </div>
 
         </div>
@@ -428,7 +1261,7 @@
 
         <div class="section-header">
 
-            <span class="section-number">04</span>
+            <span class="section-number">11</span>
 
             <div>
                 <p class="eyebrow">PROTOCOLO COOPERATIVO</p>
@@ -436,7 +1269,6 @@
             </div>
 
         </div>
-
 
         <div class="players">
 
@@ -449,15 +1281,13 @@
                     <h3>SOLDADO ALPHA</h3>
 
                     <div class="status">
-                        ● CONECTADO
+                        ● JUGADOR 1
                     </div>
                 </div>
 
             </div>
 
-
             <div class="vs">+</div>
-
 
             <div class="player-card">
 
@@ -468,7 +1298,7 @@
                     <h3>SOLDADO BRAVO</h3>
 
                     <div class="status">
-                        ● CONECTADO
+                        ● JUGADOR 2
                     </div>
                 </div>
 
@@ -477,9 +1307,10 @@
         </div>
 
         <p class="coop-text">
-            La supervivencia depende de ambos jugadores.
-            Coordina tus movimientos, administra tus recursos
-            y mantén con vida a tu compañero.
+            Distrito 9 está diseñado para dos jugadores simultáneos
+            en línea. La comunicación y el trabajo en equipo
+            son fundamentales para superar las hordas y derrotar
+            al paciente cero.
         </p>
 
     </section>
@@ -493,7 +1324,7 @@
 
         <div class="section-header">
 
-            <span class="section-number">05</span>
+            <span class="section-number">12</span>
 
             <div>
                 <p class="eyebrow">PROTOCOLO D9</p>
@@ -502,42 +1333,60 @@
 
         </div>
 
-
         <div class="rules-grid">
 
             <div class="rule">
                 <span>01</span>
-                <p>Solo <strong>2 jugadores simultáneos</strong> en modo cooperativo.</p>
+                <p>
+                    Solo <strong>2 jugadores simultáneos</strong>
+                    en modo cooperativo.
+                </p>
             </div>
 
             <div class="rule">
                 <span>02</span>
-                <p>Es obligatorio superar las <strong>3 hordas</strong> para acceder al boss.</p>
+                <p>
+                    Es obligatorio superar las
+                    <strong>3 hordas</strong> para acceder al boss.
+                </p>
             </div>
 
             <div class="rule">
                 <span>03</span>
-                <p>El escenario cambia después de cada horda.</p>
+                <p>
+                    El escenario cambia tras cada horda.
+                </p>
             </div>
 
             <div class="rule">
                 <span>04</span>
-                <p><strong>No se puede volver atrás.</strong></p>
+                <p>
+                    <strong>No se puede volver atrás.</strong>
+                </p>
             </div>
 
             <div class="rule">
                 <span>05</span>
-                <p>El boss debe ser derrotado obligatoriamente.</p>
+                <p>
+                    El boss no puede evitarse;
+                    es obligatorio derrotarlo.
+                </p>
             </div>
 
             <div class="rule">
                 <span>06</span>
-                <p>La extracción solo se habilita después de derrotar al boss.</p>
+                <p>
+                    La extracción solo se habilita
+                    después de derrotar al jefe final.
+                </p>
             </div>
 
             <div class="rule">
                 <span>07</span>
-                <p>Si un jugador muere, se aplican las reglas de revive o derrota cooperativa.</p>
+                <p>
+                    Si un jugador muere, recibe una pantalla
+                    individual de derrota mediante WB_Muerte.
+                </p>
             </div>
 
         </div>
@@ -546,25 +1395,26 @@
 
 
     <!-- =========================
-         EXTRACCIÓN
+         META PRINCIPAL
     ========================== -->
 
     <section class="extraction-section">
 
         <div class="extraction-content">
 
-            <p class="eyebrow">FASE FINAL</p>
+            <p class="eyebrow">OBJETIVO PRINCIPAL</p>
 
             <h2>EXTRACCIÓN</h2>
 
             <p>
-                Tras derrotar al paciente cero, la zona se estabiliza
-                temporalmente.
+                Sobrevive a las tres hordas, derrota al paciente cero
+                y completa el objetivo de extracción. La victoria
+                del equipo requiere alcanzar el helicóptero.
             </p>
 
             <p>
-                Un helicóptero recibe la señal y se dirige al punto
-                de extracción.
+                El helicóptero está en camino.
+                Esta es tu última oportunidad.
             </p>
 
             <div class="extraction-status">
@@ -575,11 +1425,127 @@
 
             </div>
 
-            <button class="primary-button" onclick="showEnding()">
-                SOLICITAR EXTRACCIÓN
+            <button class="primary-button" onclick="scrollToSection('contacto')">
+                CONTINUAR
             </button>
 
         </div>
+
+    </section>
+
+
+    <!-- =========================
+         TRÁILER Y DOCUMENTAL
+    ========================== -->
+
+    <section id="contenido" class="media-section">
+
+        <div class="section-header">
+            <span class="section-number">13</span>
+            <div>
+                <p class="eyebrow">ARCHIVO AUDIOVISUAL</p>
+                <h2>CONOCE <span>DISTRITO 9</span></h2>
+            </div>
+        </div>
+
+        <p class="section-intro">
+            Descubre la experiencia de juego y conoce el proceso creativo y técnico detrás del proyecto.
+        </p>
+
+        <div class="media-grid">
+
+            <article id="trailer" class="media-card">
+                <p class="eyebrow">VIDEO OFICIAL</p>
+                <h3>TRÁILER DEL JUEGO</h3>
+                <p>Agrega aquí el tráiler oficial de Distrito 9.</p>
+                <div class="video-frame">
+                    <!-- Reemplaza VIDEO_ID_DEL_TRAILER por el ID del video de YouTube. -->
+                    <iframe
+                        src="https://www.youtube-nocookie.com/embed/VIDEO_ID_DEL_TRAILER"
+                        title="Tráiler oficial de Distrito 9"
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <a class="media-link" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                    Abrir YouTube
+                </a>
+            </article>
+
+            <article class="media-card">
+                <p class="eyebrow">DETRÁS DEL PROYECTO</p>
+                <h3>PROCESO Y DOCUMENTAL</h3>
+                <p>Comparte el video del desarrollo, los avances y el proceso de creación del videojuego.</p>
+                <div class="video-frame">
+                    <!-- Reemplaza VIDEO_ID_DOCUMENTAL por el ID del documental de YouTube. -->
+                    <iframe
+                        src="https://www.youtube-nocookie.com/embed/VIDEO_ID_DOCUMENTAL"
+                        title="Documental del proceso de desarrollo de Distrito 9"
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <a class="media-link" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                    Abrir YouTube
+                </a>
+            </article>
+
+        </div>
+
+        <p class="media-note">
+            Para insertar tus videos, sustituye únicamente los textos
+            <strong>VIDEO_ID_DEL_TRAILER</strong> y <strong>VIDEO_ID_DOCUMENTAL</strong>
+            por los identificadores correspondientes de YouTube.
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         REDES SOCIALES
+    ========================== -->
+
+    <section id="redes" class="social-section">
+
+        <div class="section-header">
+            <span class="section-number">14</span>
+            <div>
+                <p class="eyebrow">MANTENTE INFORMADO</p>
+                <h2>SIGUE A <span>DISTRITO 9</span></h2>
+            </div>
+        </div>
+
+        <p class="section-intro">
+            Sigue las redes oficiales para conocer noticias, avances, clips y novedades del juego.
+        </p>
+
+        <div class="social-grid">
+            <a class="social-card" href="https://www.tiktok.com/@distrito996?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" aria-label="TikTok de Distrito 9">
+                <span class="social-icon">♪</span>
+                <span class="social-name">TIKTOK</span>
+                <span class="social-handle">@distrito996</span>
+            </a>
+
+            <a class="social-card" href="https://x.com/Distrito9dv?s=20" target="_blank" rel="noopener noreferrer" aria-label="X de Distrito 9">
+                <span class="social-icon">𝕏</span>
+                <span class="social-name">X</span>
+                <span class="social-handle">@Distrito9dv</span>
+            </a>
+
+            <a class="social-card" href="https://www.instagram.com/distrito.9dv" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Distrito 9">
+                <span class="social-icon">◎</span>
+                <span class="social-name">INSTAGRAM</span>
+                <span class="social-handle">@distrito.9dv</span>
+            </a>
+        </div>
+
+        <p class="social-note">
+            Reemplaza <strong>TU_USUARIO</strong> y los enlaces de ejemplo por las direcciones reales de tus cuentas.
+        </p>
 
     </section>
 
@@ -592,12 +1558,17 @@
 
         <div>
 
-            <p class="classified">TRANSMISIÓN FINAL // D9</p>
+            <p class="classified">
+                TRANSMISIÓN FINAL // DISTRITO 9
+            </p>
 
-            <h2>¿ESTÁS LISTO PARA<br><span>ENTRAR?</span></h2>
+            <h2>
+                ¿ESTÁS LISTO PARA<br>
+                <span>ENTRAR?</span>
+            </h2>
 
             <p>
-                El Distrito 9 no espera a nadie.
+                Dos soldados. Tres hordas. Una misión.
             </p>
 
             <button class="primary-button" onclick="startMission()">
@@ -623,6 +1594,8 @@
             Survival Shooter Cooperativo
         </p>
 
+        <p><a href="#redes">REDES SOCIALES</a> · <a href="#contenido">VIDEOS</a></p>
+
         <p class="copyright">
             © 2026 DISTRITO 9 — Proyecto académico
         </p>
@@ -631,51 +1604,20 @@
 
 
     <!-- =========================
-         MODAL TRÁILER
-    ========================== -->
-
-    <div id="trailerModal" class="modal">
-
-        <div class="modal-content">
-
-            <button class="close-modal" onclick="closeTrailer()">×</button>
-
-            <p class="eyebrow">TRANSMISIÓN RECUPERADA</p>
-
-            <h2>DISTRITO <span>9</span></h2>
-
-            <div class="fake-video">
-
-                <div class="video-glitch">
-                    SIGNAL LOST
-                </div>
-
-                <div class="play-circle">
-                    ▶
-                </div>
-
-                <p>
-                    TRÁILER NO DISPONIBLE
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- =========================
          NOTIFICACIÓN
     ========================== -->
 
     <div id="notification" class="notification">
+
         <span>⚠</span>
+
         <p id="notificationText">Mensaje</p>
+
     </div>
 
 
     <script src="script.js"></script>
 
 </body>
+
 </html>

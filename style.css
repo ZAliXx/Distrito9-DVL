@@ -1672,3 +1672,820 @@ footer {
         bottom: 20px;
     }
 }
+
+
+/* =========================
+   ESCENARIO
+========================= */
+
+.environment-section {
+    background: #0c0e0e;
+}
+
+.environment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.environment-card {
+    min-height: 350px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    background-color: #202424;
+    border: 1px solid var(--border);
+    transition: 0.4s;
+}
+
+.environment-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--red);
+}
+
+.environment-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.98),
+        rgba(0,0,0,0.1)
+    );
+    z-index: 1;
+}
+
+.street {
+    background:
+        linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.5)),
+        url("images/calles.jpg") center/cover;
+}
+
+.buildings {
+    background:
+        linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.5)),
+        url("images/edificios.jpg") center/cover;
+}
+
+.alleys {
+    background:
+        linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.5)),
+        url("images/callejones.jpg") center/cover;
+}
+
+.environment-overlay {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+}
+
+.environment-overlay span {
+    color: var(--red);
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+}
+
+.environment-overlay h3 {
+    font-family: "Black Ops One", sans-serif;
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.environment-overlay p {
+    color: #aaa;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+.engine-label {
+    margin-top: 35px;
+    text-align: center;
+    color: #777;
+    letter-spacing: 2px;
+    font-size: 0.75rem;
+}
+
+.engine-label span {
+    color: var(--red);
+    margin-right: 8px;
+}
+
+
+/* =========================
+   ENEMIGOS
+========================= */
+
+.enemies-section {
+    background: #101313;
+}
+
+.enemies-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.enemy-card {
+    background: #090b0b;
+    border: 1px solid var(--border);
+    padding: 35px;
+    transition: 0.3s;
+}
+
+.enemy-card:hover {
+    border-color: var(--red);
+    transform: translateY(-5px);
+}
+
+.enemy-symbol {
+    width: 65px;
+    height: 65px;
+    background: #201111;
+    border: 1px solid var(--red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--red);
+    font-family: "Black Ops One", sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.enemy-card h3 {
+    font-family: "Black Ops One", sans-serif;
+    font-size: 1.5rem;
+    margin: 12px 0;
+}
+
+.enemy-card > p:not(.eyebrow) {
+    color: #888;
+    line-height: 1.7;
+    min-height: 100px;
+}
+
+.enemy-status {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 7px 12px;
+    border: 1px solid var(--red);
+    color: var(--red);
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}
+
+.enemy-status.friendly {
+    border-color: var(--green);
+    color: var(--green);
+}
+
+.boss-card {
+    background: linear-gradient(
+        145deg,
+        #1c0b0b,
+        #090b0b
+    );
+}
+
+
+/* =========================
+   MOTIVACIONES
+========================= */
+
+.motivation-section {
+    background: #080909;
+}
+
+.motivation-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.motivation-card {
+    padding: 35px;
+    border: 1px solid var(--border);
+    background: #111414;
+    transition: 0.3s;
+}
+
+.motivation-card:hover {
+    border-color: var(--red);
+    transform: translateY(-5px);
+}
+
+.motivation-card span {
+    font-family: "Black Ops One", sans-serif;
+    font-size: 2.5rem;
+    color: var(--red);
+}
+
+.motivation-card h3 {
+    margin: 20px 0 12px;
+    letter-spacing: 2px;
+}
+
+.motivation-card p {
+    color: #888;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   RESPONSIVE NUEVO
+========================= */
+
+@media (max-width: 900px) {
+
+    .environment-grid,
+    .enemies-grid,
+    .motivation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .environment-card {
+        min-height: 280px;
+    }
+}
+
+
+/* =========================
+   ACTORES - 4 COLUMNAS
+========================= */
+
+.enemies-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.helicopter-card {
+    background: linear-gradient(
+        145deg,
+        #101b1b,
+        #090b0b
+    );
+}
+
+
+/* =========================
+   ANIMACIONES
+========================= */
+
+.animations-section {
+    background: #0c0e0e;
+}
+
+.animation-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 35px 0;
+}
+
+.animation-folder {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 22px;
+    background: #151919;
+    border: 1px solid var(--border);
+}
+
+.animation-folder > span {
+    font-size: 1.8rem;
+}
+
+.animation-folder p {
+    color: #777;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    margin-bottom: 7px;
+}
+
+.animation-folder strong {
+    color: var(--red);
+    font-size: 0.9rem;
+    overflow-wrap: anywhere;
+}
+
+.animations-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.animation-card {
+    padding: 25px;
+    background: #111414;
+    border: 1px solid var(--border);
+    transition: 0.3s;
+}
+
+.animation-card:hover {
+    border-color: var(--red);
+    transform: translateY(-4px);
+}
+
+.animation-card span {
+    color: var(--red);
+    font-family: "Black Ops One", sans-serif;
+    font-size: 1.5rem;
+}
+
+.animation-card h3 {
+    margin: 15px 0 10px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.animation-card p {
+    color: #888;
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CONTROLES
+========================= */
+
+.controls-section {
+    background: #101313;
+}
+
+.controls-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.control-panel {
+    padding: 35px;
+    background: #090b0b;
+    border: 1px solid var(--border);
+}
+
+.control-panel h3 {
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.keyboard {
+    margin: 20px 0;
+}
+
+.key-row {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.key {
+    min-width: 48px;
+    height: 48px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #242828;
+    border: 1px solid #555;
+    border-bottom: 4px solid #555;
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+    border-radius: 5px;
+}
+
+.control-panel > p {
+    color: #888;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.action-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.action-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.action-item p {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.space-key {
+    min-width: 105px;
+    font-size: 0.75rem;
+}
+
+.mouse-key {
+    min-width: 65px;
+    font-size: 0.75rem;
+}
+
+.camera-mode {
+    margin-top: 20px;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #171b1b;
+    border-left: 3px solid var(--red);
+}
+
+.camera-mode h3 {
+    font-family: "Black Ops One", sans-serif;
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.camera-mode p:not(.eyebrow) {
+    color: #888;
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.camera-label {
+    text-align: center;
+    color: #777;
+    letter-spacing: 2px;
+    font-size: 0.7rem;
+}
+
+.camera-label span {
+    display: block;
+    color: var(--red);
+    font-family: "Black Ops One", sans-serif;
+    font-size: 3rem;
+}
+
+.weapon-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.weapon-card {
+    padding: 30px;
+    background: #0a0c0c;
+    border: 1px solid var(--border);
+}
+
+.weapon-card span {
+    color: var(--red);
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}
+
+.weapon-card h3 {
+    font-family: "Black Ops One", sans-serif;
+    font-size: 1.7rem;
+    margin: 12px 0;
+}
+
+.weapon-card p {
+    color: #888;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   SONIDOS
+========================= */
+
+.sound-section {
+    background: #080909;
+}
+
+.sound-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.sound-card {
+    padding: 30px;
+    background: #121515;
+    border: 1px solid var(--border);
+    transition: 0.3s;
+}
+
+.sound-card:hover {
+    border-color: var(--red);
+    transform: translateY(-5px);
+}
+
+.sound-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.sound-card h3 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.sound-card p {
+    color: #888;
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   PARTÍCULAS
+========================= */
+
+.particles-section {
+    background: #101313;
+}
+
+.particles-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.particle-card {
+    padding: 25px;
+    background: #090b0b;
+    border: 1px solid var(--border);
+    transition: 0.3s;
+}
+
+.particle-card:hover {
+    border-color: var(--red);
+}
+
+.particle-card > span {
+    color: var(--red);
+    font-family: "Black Ops One", sans-serif;
+    font-size: 1.6rem;
+}
+
+.particle-card h3 {
+    margin: 15px 0 10px;
+    font-size: 1rem;
+}
+
+.particle-card p {
+    color: #888;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    min-height: 90px;
+}
+
+.particle-card small {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--red);
+    letter-spacing: 2px;
+    font-size: 0.65rem;
+}
+
+
+/* =========================
+   DESARROLLO
+========================= */
+
+.development-section {
+    background: #080909;
+}
+
+.development-block {
+    margin-bottom: 45px;
+    border: 1px solid var(--border);
+    background: #101313;
+}
+
+.development-heading {
+    padding: 25px 30px;
+    background: #1a1d1d;
+    border-bottom: 1px solid var(--border);
+}
+
+.development-heading span {
+    color: var(--red);
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+}
+
+.development-heading h3 {
+    margin-top: 10px;
+    font-family: "Black Ops One", sans-serif;
+    font-size: 1.4rem;
+}
+
+.development-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--border);
+}
+
+.development-item {
+    padding: 30px;
+    background: #101313;
+}
+
+.development-item h4 {
+    color: var(--red);
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.development-item p {
+    color: #888;
+    line-height: 1.7;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+
+.development-item strong {
+    color: #ddd;
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================
+   RESULTADOS
+========================= */
+
+.results-section {
+    background: #101313;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.result-card {
+    padding: 35px;
+    background: #090b0b;
+    border: 1px solid var(--border);
+}
+
+.result-card.victory {
+    border-top: 3px solid var(--green);
+}
+
+.result-card.defeat {
+    border-top: 3px solid var(--red);
+}
+
+.result-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.victory .result-icon {
+    color: var(--green);
+}
+
+.defeat .result-icon {
+    color: var(--red);
+}
+
+.result-card h3 {
+    font-family: "Black Ops One", sans-serif;
+    font-size: 1.6rem;
+    margin: 12px 0;
+}
+
+.result-card p:not(.eyebrow) {
+    color: #888;
+    line-height: 1.7;
+}
+
+.result-card ul {
+    padding-left: 20px;
+    margin-top: 20px;
+    color: #aaa;
+    line-height: 2;
+}
+
+.ranking-panel {
+    margin-top: 25px;
+    padding: 40px;
+    background: #090b0b;
+    border: 1px solid var(--border);
+}
+
+.ranking-panel h3 {
+    font-family: "Black Ops One", sans-serif;
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.ranking-panel > p:not(.eyebrow) {
+    color: #888;
+    line-height: 1.7;
+    max-width: 650px;
+}
+
+.ranking-positions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.ranking-position {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #171b1b;
+}
+
+.ranking-position > span {
+    font-family: "Black Ops One", sans-serif;
+    font-size: 2.5rem;
+    color: var(--red);
+}
+
+.ranking-position strong {
+    letter-spacing: 1px;
+}
+
+.ranking-position p {
+    color: #888;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.score-variable {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: #777;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+}
+
+.score-variable strong {
+    color: var(--red);
+    margin-left: 8px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+
+    .enemies-grid,
+    .sound-grid,
+    .particles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .animations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+
+    .animation-info,
+    .controls-container,
+    .weapon-info,
+    .development-content,
+    .results-grid,
+    .ranking-positions {
+        grid-template-columns: 1fr;
+    }
+
+    .camera-mode {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .enemies-grid,
+    .sound-grid,
+    .particles-grid,
+    .animations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .development-heading h3 {
+        font-size: 1.1rem;
+    }
+
+    .particle-card p {
+        min-height: auto;
+    }
+}
